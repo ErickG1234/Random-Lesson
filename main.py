@@ -1,4 +1,5 @@
 from random import randint
+from random import shuffle
 # random
 # Python comes with a built in random library. There are a lot of functions included in this random library, so we will only 
 #show you two useful functions for now.
@@ -18,7 +19,23 @@ if rolled_doubles:
 # from random import shuffle
 # # This shuffles the list "in-place" meaning it won't return
 # # anything, instead it will effect the list passed
+my_list = range(1,51)
+print("My new List: ")
+print(list(my_list))
+my_list = list(my_list)
+shuffle(my_list) #Should work alone 
+print(my_list)
+
+random = randint(1,201)
+print("Random number: ")
+print(random)
+
+if random % 2 == 0:
+  print("Your number is even! ")
+else: print("Your number is odd. ")
   
+
+
   
 # shuffle(mylist)
 # mylist
