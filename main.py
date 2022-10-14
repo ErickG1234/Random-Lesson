@@ -1,5 +1,6 @@
 from random import randint
 from random import shuffle
+from random import choice
 # random
 # Python comes with a built in random library. There are a lot of functions included in this random library, so we will only 
 #show you two useful functions for now.
@@ -33,7 +34,10 @@ print(random)
 if random % 2 == 0:
   print("Your number is even! ")
 else: print("Your number is odd. ")
-  
+
+color = ['red','blue','pink', 'purple']
+random_color = choice(color)
+print(f"random color is {random_color}")
 
 
   
